@@ -35,7 +35,7 @@ header {
 
 /* Main Content */
 .main-content {
-    margin-left: 250px; /* Same as sidebar width */
+    margin-left: 270px; /* Same as sidebar width */
     flex: 1;
     flex: 1;
     padding: 20px;
