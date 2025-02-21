@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard UI</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="./sidear.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="./color and logo design 3.png" alt="AL-AFIYAH">
+        </div>
+        <ul class="menu">
+            <li class="menu-item active">Dashboard</li>
+
+            <li class="menu-item has-sub">
+                <span>Fleet Management</span>
+                <ul class="submenu">
+                    <li><button id="openAddFleetForm" class="btn">Add Fleet</button></li>
+                    <li>Fleet List</li>
+                    <li>Fleet Assignments</li>
+                    <li>Expense History</li>
+                </ul>
+            </li>
+
+            <li class="menu-item has-sub">
+                <span>Reminders <span class="badge">5</span></span>
+                <ul class="submenu">
+                    <li>Service Reminder</li>
+                    <li>Add Service Reminder</li>
+                    <li>Service Items</li>
+                </ul>
+            </li>
+
+            <li class="menu-item has-sub">
+                <span>Employee Management</span>
+                <ul class="submenu">
+                    <li>Manage Employee</li>
+                    <li>Positions</li>
+                    <li>Departments</li>
+                    <li>Manage Drivers</li>
+                    <li>Driver Performance</li>
+                    <li>Fleet Owners</li>
+                </ul>
+            </li>
+
+            <li class="menu-item">Get Help</li>
+            <li class="menu-item">Settings</li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <div>
+                <h1>Account Details</h1>
+                <small>Here is what’s happening as at today</small>
+            </div>
+            <div class="profile-menu">
+                <span>Hussini</span>
+            </div>
+        </header>
+
+<!-- Main Content Section for Adding Fleet -->
+<div id="addFleetSection" class="full-screen-form">
+    <div class="form-header">
+        <h2>Add New Fleet</h2>
+        <button id="closeFleetForm" class="close-btn">Close ✖</button>
+    </div>
+    <form id="addFleetForm">
+        <label for="fleetName">Fleet Name</label>
+        <input type="text" id="fleetName" required>
+
+        <div class="row">
+            <div>
+                <label for="fleetGroup">Fleet Group</label>
+                <input type="text" id="fleetGroup">
+            </div>
+            <div>
+                <label for="fleetType">Fleet Type</label>
+                <input type="text" id="fleetType">
+            </div>
+        </div>
+
+        <div class="row">
+            <div>
+                <label for="dateFounded">Date Founded</label>
+                <input type="date" id="dateFounded">
+            </div>
+            <div>
+                <label for="contactPerson">Contact Person</label>
+                <input type="text" id="contactPerson">
+            </div>
+        </div>
+
+        <div class="row">
+            <div>
+                <label for="contactPhone">Contact Phone</label>
+                <input type="tel" id="contactPhone">
+            </div>
+            <div>
+                <label for="contactEmail">Contact Person Email</label>
+                <input type="email" id="contactEmail">
+            </div>
+        </div>
+
+        <label for="taxID">Tax ID</label>
+        <input type="text" id="taxID">
+
+        <div class="fleet-owner">
+            <h3>Select Fleet Owner</h3>
+            <p>Mohammed Lawal Abubakar</p>
+            <small>softdiddy@gmail.com | 09000000000</small>
+        </div>
+
+        <button type="submit" class="btn-submit">Add Fleet</button>
+    </form>
+</div>
+      
+
+        <!-- Cards Section -->
+        <div class="container">
+            <!-- Column 1 -->
+            <div class="column"  id="column1" >
+                <div class="card" id="card_totalFleet">
+                    <h3>Total No of Fleet</h3>
+                    <h1 class="fleet_num" >45</h1>
+                    <div class="fleet_img_container"><img class="fleet_img" src="./Icon .png" alt="total no of fleet"></div>
+                </div>
+                <div class="card" id="card_totalDrivers">
+                    <h3>Total Drivers</h3>
+                    <h1 class="fleet_num">40</h1>
+                    <div class="fleet_img_container"><img class="fleet_img" src="./Icon2.png" alt="total no of fleet"></div>
+
+                </div>
+                <div class="card yellow-card" id="service">
+                    <img class="service_img" src="service.PNG">
+                </div>
+            </div>
+    
+            <!-- Column 2 -->
+
+
+
+            <div class="columna" id="tansactionColoum">
+                <h3>Transaction Statust</h3>
+                <img class="tansaction_img" src="./transaction.PNG" alt="total no of fleet">
+            </div>
+            <!-- Column 3 -->
+            <div class="column"id="upcoming">
+                <!-- <h3>Upcomming Maintenance</h3> -->
+                <div class="upcomingImages>">
+                <img src="./service1.png" alt="total no of fleet">                
+                <img src="./service.PNG" alt="total no of fleet"> 
+            </div>               
+            </div>
+            </div>
+        </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.auth-container {
+    width: 50%;
+    max-width: 500px;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.auth-box img.logo {
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.auth-box h2 {
+    margin-bottom: 1rem;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-box input:focus {
+    border: 1px solid #007BFF;
+    outline: none;
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-box button:hover {
+    background-color: #0056b3;
+}
+
+.auth-box p {
+    margin-top: 10px;
+}
+
+.auth-box a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.auth-box a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .auth-container {
+        width: 90%;
+    }
+}
+.otp-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.otp-input {
+    width: 20px;
+    height: 20px;
+    font-size: 24px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.otp-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.otp-input::-webkit-outer-spin-button,
+.otp-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
